@@ -11,7 +11,7 @@ isProtected : false(public)
 */
 
 router.get('/all', async (req,res)=>{
-    const {Categories} = req.body
+    //const {Categories} = req.body
     try{
         const Categories = await Category.find({})
         return res.status(200).json({Categories, message:"Successfully fetched categories"})
